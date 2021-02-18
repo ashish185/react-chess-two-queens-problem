@@ -58,5 +58,24 @@ export function isItSafe(row, col, board) {
         r--;
         c--;
     }
+   //left
+   
+    r = row;
+    c= col-1;
+    while (c >= 0) {
+        if (board[r][c]) {
+            return false;
+        }
+        c--;
+    }
+    //right
+    r = row;
+    c = col+1;
+    while ( c < board[0].length) {
+        if (board[r][c]) {
+            return false;
+        }
+       c++;
+    }
     return true;
 }

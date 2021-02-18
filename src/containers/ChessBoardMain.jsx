@@ -14,7 +14,7 @@ const Circle =   () =>{
     return <div className="circle"/>
 }
 const BoardRow = ({i,j,bgColor,handleClick,matrix,crossMatrix}) =>{
-    console.log(`${i},${j}`);
+   
     return <div key={`${i},${j}`}
                         style={{ backgroundColor: bgColor, height: '100%', width: '100%' }}
                         onClick={() => handleClick(i, j)}
@@ -29,6 +29,7 @@ const ChessBoardMain = () => {
     const handleClick =(i,j) => {
         const mt = [...matrix];
         let x = isItSafe(i,j,matrix)
+        console.log(x);
         if(x){
             mt[i][j] =1;
             setMatrix(mt);
