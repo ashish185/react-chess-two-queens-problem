@@ -54,7 +54,7 @@ export function isItSafe(row, col, board) {
     while (r > 0 && c > 0) {
         if (board[r][c]) {
             return false;
-        }
+        } 
         r--;
         c--;
     }
