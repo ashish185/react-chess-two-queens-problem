@@ -1,0 +1,27 @@
+.column-class{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.chess-cont{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 75vmin;
+    width: 75vmin;
+}
+.circle{
+    background-color: green;
+    height:75%;
+    width:75%;
+    border-radius:50%;
+    margin: 10%;
+}
+.cross{
+    display: block;
+    color: red;
+    font-size: 5vmin;
+   
+/*    
+    margin: 10%; */
+}
