@@ -49,7 +49,7 @@ export function isItSafe(row, col, board) {
         c++;
     }
     // diagonally lower left
-    r = row - 1;
+    r = row + 1;
     c = col - 1;
     while (r > 0 && c > 0) {
         if (board[r][c]) {
